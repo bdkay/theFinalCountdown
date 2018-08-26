@@ -26,7 +26,10 @@ class Clock extends Component  {
     
     console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days);
     this.setState({
-      days: days
+      days,
+      hours,
+      minutes,
+      seconds
     });
   }
   
