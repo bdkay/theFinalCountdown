@@ -45,7 +45,9 @@ It's the final countdown
 
 Oh
   
-It's the final countdown, yeah  
+It's the final countdown, yeah 
+
+_______
 
 > [1]: Songwriters: Joey Tempest
 > The Final Countdown lyrics © EMI Music Publishing, Sony/ATV Music Publishing LLC
