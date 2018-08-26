@@ -23,11 +23,7 @@ class Clock extends Component  {
   }
   
   leadingZero(num){
-    if (num < 10){
-      return `0${num}`;
-    } else {
-      return num;
-    }
+    return num < 10 ? `0${num}` : num;
   }
   
   getTimeUntil(deadline){
