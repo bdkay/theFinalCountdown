@@ -14,7 +14,7 @@ class Clock extends Component  {
   
   getTimeUntil(deadline){
     const time = Date.parse(deadline) - Date.parse(new Date());
-    console.log(time);
+    console.log('time', time);
     console.log(deadline);
   }
   
