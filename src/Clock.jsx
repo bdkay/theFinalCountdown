@@ -15,10 +15,10 @@ class Clock extends Component  {
   render() {
     return (
       <div>
-        <div className="clock-days">14 Days, </div>
-        <div className="clock-hours">30 Hours, </div>
-        <div className="clock-minutes">15 Minutes, </div>
-        <div className="clock-seconds">20 Seconds</div>
+        <div className="clock-days">{this.state.days}</div>
+        <div className="clock-hours">{this.state.hours}</div>
+        <div className="clock-minutes">{this.state.minutes} </div>
+        <div className="clock-seconds">{this.state.seconds}</div>
       </div>
     )
   }
