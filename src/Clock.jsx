@@ -22,6 +22,14 @@ class Clock extends Component  {
     })
   }
   
+  leadingZero(num){
+    if (num < 10){
+      return `0${num}`;
+    } else {
+      return num;
+    }
+  }
+  
   getTimeUntil(deadline){
     const time = Date.parse(deadline) - Date.parse(new Date());
     const seconds = Math.floor((time/1000) % 60);
@@ -40,9 +48,9 @@ class Clock extends Component  {
   render() {
     return (
       <div>
-        <div className="clock-days">{this.state.days} Days</div>
-        <div className="clock-hours">{this.state.hours} Hours</div>
-        <div className="clock-minutes">{this.state.minutes} Minutes</div>
+        <div className="clock-days">{this.leadingZero(this.state.days)} Days</div>
+        <div className="clock-hours">{this.leadingZero(this.state.hours)} Hours</div>
+        <div className="clock-minutes">{this.leadingZero(this.state.minutes)} Minutes</div>
         <div className="clock-seconds">{this.state.seconds} Seconds</div>
       </div>
     )
