@@ -15,6 +15,7 @@
 .App-submit {
   padding-top: 20px;
   font-size: 14px;
+  display: block;
 }
 
 .clock-days, .clock-hours, .clock-minutes, .clock-seconds {
@@ -25,4 +26,8 @@
 .Deadline-input {
   font-size: 25px;
   margin: 5px;
+}
+
+.form-control {
+  margin-right: 5px;
 }
